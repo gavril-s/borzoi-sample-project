@@ -1,0 +1,15 @@
+prod_branch: master
+base_url: example.org
+services:
+  first:
+    dockerfile_path: ./Dockerfile
+    instance_count: 2
+    root_path: ./first
+    external_port: 6000
+    internal_port: 80
+  second:
+    dockerfile_path: ./Dockerfile
+    instance_count: 2
+    root_path: ./second
+    external_port: 6001
+    internal_port: 80
